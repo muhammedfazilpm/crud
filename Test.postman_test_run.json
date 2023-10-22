@@ -1,0 +1,25 @@
+{
+	"id": "9af27d1e-c134-4e33-8959-955a3e2b3db4",
+	"name": "Test",
+	"timestamp": "2023-10-22T14:59:25.078Z",
+	"collection_id": "30672539-062828d7-9f39-4c82-89fb-e10c5ec11816",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "aborted",
+	"startedAt": "2023-10-22T14:56:25.628Z",
+	"totalFail": 0,
+	"results": [],
+	"count": 1,
+	"totalTime": 0,
+	"collection": {
+		"requests": [
+			{
+				"id": "1bae4b55-3012-4158-9301-69d803e31ef1",
+				"method": "DELETE"
+			}
+		]
+	}
+}
