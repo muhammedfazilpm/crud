@@ -4,7 +4,7 @@ import {toast} from 'react-toastify';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 const initialState = {
-    heading: "",
+    headers: "",
     description: "",
     date: "",
     time: "",
@@ -31,8 +31,8 @@ function View() {
     <h1 className="text-2xl font-semibold mb-4 text-center">Single Page View</h1>
 
     <div className="p-2 border border-red-500 hover:border-transparent transition duration-300">
-      <label htmlFor="heading" className="text-gray-600">Heading</label>
-      <p>{data.heading}</p>
+      <label htmlFor="headers" className="text-gray-600">headers</label>
+      <p>{data.headers}</p>
     </div>
 
     <div className="p-2 border border-red-500 hover:border-transparent transition duration-300">

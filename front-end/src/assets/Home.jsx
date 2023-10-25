@@ -79,7 +79,7 @@ function Home() {
     <table className="w-full table-auto text-sm text-left">
       <thead className="bg-gray-50 text-gray-600 font-medium border-b">
         <tr>
-          <th className="py-3 px-6">Heading</th>
+          <th className="py-3 px-6">headers</th>
           <th className="py-3 px-6">Description</th>
           <th className="py-3 px-6">Date</th>
           <th className="py-3 px-6">Time</th>
@@ -91,7 +91,7 @@ function Home() {
       <tbody className="text-gray-600 divide-y">
         {filteredTasks.map((item, idx) => (
           <tr key={idx}>
-            <td className="px-6 py-4 whitespace-nowrap">{item.heading}</td>
+            <td className="px-6 py-4 whitespace-nowrap">{item.headers}</td>
             <td className="px-6 py-4 whitespace-nowrap">{item.description}</td>
             <td className="px-6 py-4 whitespace-nowrap">{item.date}</td>
             <td className="px-6 py-4 whitespace-nowrap">{item.time}</td>

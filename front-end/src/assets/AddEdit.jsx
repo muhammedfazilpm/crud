@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import axios from "axios";
 
 const initialState = {
-  heading: "",
+  headers: "",
   description: "",
   date: "",
   time: "",
@@ -38,9 +38,9 @@ function AddEdit() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const { heading, description, date, time, priority, image } = state;
+    const { headers, description, date, time, priority, image } = state;
 
-    if (!heading || !description || !date || !time) {
+    if (!headers || !description || !date || !time) {
       toast.error("Please fill the form");
       return;
     } else if (!priority || priority === "Priority") { 
@@ -52,7 +52,7 @@ function AddEdit() {
     }
 
     const formData = new FormData();
-    formData.append("heading", heading);
+    formData.append("headers", headers);
     formData.append("description", description);
     formData.append("date", date);
     formData.append("time", time);
@@ -108,12 +108,12 @@ function AddEdit() {
     <h1 className="text-2xl font-semibold mb-4">ADD EDIT</h1>
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
-        <label htmlFor="heading" className="text-gray-600">Heading</label>
+        <label htmlFor="headers" className="text-gray-600">headers</label>
         <input
           type="text"
-          name="heading"
-          placeholder="heading"
-          value={state.heading || ""}
+          name="headers"
+          placeholder="headers"
+          value={state.headers || ""}
           onChange={handleChange}
           className="w-full p-2 border rounded shadow-sm"
         />
